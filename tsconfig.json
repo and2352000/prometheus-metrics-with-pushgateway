@@ -1,0 +1,62 @@
+{
+  /* Visit https://aka.ms/tsconfig.json to read more about this file */
+  "compilerOptions": {
+    /* Basic Options */
+    "incremental": true,
+    /* Enable incremental compilation */
+    "target": "es2016",
+    /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "module": "commonjs",
+    /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "lib": [
+      "es2016",
+      "dom"
+    ],
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    /* Generates corresponding '.d.ts' file. */
+    "declaration": true,
+    /* Redirect output structure to the directory. */
+    "outDir": "./dist",
+    "downlevelIteration": true,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    /* Enable all strict type-checking options. */
+    "noImplicitAny": true,
+    /* Raise error on expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true,
+    /* Enable strict null checks. */
+    "strictFunctionTypes": true,
+    /* Enable strict checking of function types. */
+    "noImplicitThis": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "baseUrl": "./",
+    /* Base directory to resolve non-absolute module names. */
+    "paths": {
+      "*": [
+        "node_modules/*"
+      ]
+    },
+    "rootDirs": [
+      "./src"
+    ],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    /* Advanced Options */
+    /* Skip type checking of declaration files. */
+    "skipLibCheck": true,
+    /* Disallow inconsistently-cased references to the same file. */
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": true,
+    "useUnknownInCatchVariables": false /* we aren't prepared for enabling this by default since ts 4.4*/,
+    /* For emit  */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": [
+      "node",
+    ]
+  }
+}
